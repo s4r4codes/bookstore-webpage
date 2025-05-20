@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+    <a href="#" class="logo">Book Cave<span>.</span></a>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="products.html">Books</a></li>
+            <li><a href="index.html">Review</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
+        <a href="registration.html" class="fas fa-user"></a>
+    </div>
+  </header>
+
+  <!-- Checkout Section -->
+  <section class="checkout-container">
+    <h1>Checkout</h1>
+    <form id="checkoutForm">
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address</label>
+        <textarea id="address" name="address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="paymentMethod">Payment Method</label>
+        <select id="paymentMethod" name="paymentMethod" required>
+          <option value="creditCard">Credit Card</option>
+          <option value="paypal">PayPal</option>
+          <option value="bankTransfer">Bank Transfer</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="cardDetails">Card Details</label>
+        <input type="text" id="cardDetails" name="cardDetails" placeholder="1234-5678-9876-5432" required>
+      </div>
+      <button type="submit">Complete Purchase</button>
+    </form>
+    <div id="confirmationMessage" class="hidden">Thank you for your purchase!</div>
+  </section>
+
+  <script src="checkoutscript.js"></script>
+  
+  <!-- Footer Section -->
+  <section class="footer" id="footer">
+    <div class="footer-box-container">
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="index.html" >Home</a>
+            <a href="About.html" >About</a>
+            <a href="products.html" >Books </a>
+            <a href="index.html" >Review</a>
+            <a href="contact.html" >Contact</a>
+            <a href="faqs.html" >FAQs</a>
+        </div>
+        <div class="box">
+            <h3>Extra Links</h3>
+            <a href="registration.html" >My Account</a>
+            <a href="cart.html" >My Order</a>
+        </div>
+        <div class="box">
+            <h3>Policy</h3>
+                <a href="terms.html" >Terms of service </a>
+                <a href="refund.html" >Refund policy</a>
+                <a href="shipping.html" >Shipping policy </a>
+        </div>
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#" >+92-234-3564787</a>
+            <a href="#" >bookcave@gmail.com</a>
+            <a href="#" >Islamabad, Pakistan.</a>
+            <div class="image-container">
+                <img src="https://cdn.shoplightspeed.com/shops/612294/files/14471471/creditcardlogos.jpg" alt="Example Image">
+            </div>
+        </div>
+    </div>
+    <div class="credit"><p>&copy; 2025 <span>Book Cave.</span> All rights reserved.</p></div>
+  </section>
+
+</body>
+</html>

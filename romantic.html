@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - The Shadowed Bookstore</title>
+    <link rel="stylesheet" href="romantic.css">
+</head>
+
+<body>
+    <header data-category="romantic">
+        <h1>Book Cave</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Books</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="cart-link" class="hidden"><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+
+        <!-- Category Selection Bar -->
+        <div id="category-bar">
+            <ul>
+                <li><a href="products.html">Horror Books</a></li>
+                <li><a href="crime.html">Crime Thrillers</a></li>
+                <li><a href="comic_books.html">Comic Books</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="books" class="books">
+        <div class="heading">
+            <h2>Books Collection</h2>
+            <p>Explore our curated selection of thrilling reads. Sort by price or rating to find your perfect book!</p>
+        </div>
+
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search for a book...">
+            <button id="search-button">Search</button>
+            <div id="results"></div>
+        </div>
+
+        <div id="filters">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="price">Price</option>
+                <option value="rating">Rating</option>
+            </select>
+        </div>
+
+        <div id="book-list" class="flex-wrap">
+            <!-- Book Cards will be inserted dynamically -->
+        </div>
+    </main>
+
+    <script src="romantic.js"></script>
+
+    <footer>
+        <p>&copy; 2025 Book Cave. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
